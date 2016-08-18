@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="rbac-core:war">
-    <output-path>$PROJECT_DIR$/rbac-core/target</output-path>
-    <root id="archive" name="rbac-core.war">
-      <element id="artifact" artifact-name="rbac-core:war exploded" />
-    </root>
-  </artifact>
-</component>
