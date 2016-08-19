@@ -17,8 +17,29 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.rbac</groupId>
+            <artifactId>rbac-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>rbac-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.0.M0</version>
+                <configuration>
+                    <reload>manual</reload>
+                    <httpConnector>
+                        <port>8090</port>
+                    </httpConnector>
+                    <webAppConfig>
+                        <contextPath>/${project.build.finalName}</contextPath>
+                    </webAppConfig>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>

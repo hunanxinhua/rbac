@@ -3,7 +3,7 @@ package com.rbac.realm;
 import com.rbac.entity.User;
 import com.rbac.service.AuthorizationService;
 import com.rbac.service.UserService;
-import com.rbac.util.Constants;
+import com.rbac.utils.Constants;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
